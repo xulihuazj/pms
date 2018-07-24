@@ -7,27 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad740084-5060-4c58-b34d-2e61e27b17d4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/xulihuazj/pms/boot/authority/AuthorityInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/xulihuazj/pms/boot/authority/IPWhiteInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/xulihuazj/pms/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/xulihuazj/pms/config/annotation/OPENDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/xulihuazj/pms/config/annotation/PMSDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/xulihuazj/pms/config/db/PMSDBConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/xulihuazj/pms/mapper/pmsdb/ip/IpWhiteListDOMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/xulihuazj/pms/mapper/pmsdb/sms/SmsLogDOMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/xulihuazj/pms/mongdb/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/xulihuazj/pms/mongdb/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/xulihuazj/pms/object/pmsdb/ip/IpWhiteListDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/xulihuazj/pms/object/pmsdb/sms/SmsLogDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/resources/pmsdb.ip/IpWhiteListDOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/resources/pmsdb.sms/SmsLogDOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/xulihuazj/pms/service/ip/IpWhiteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/xulihuazj/pms/service/quartz_job/QuartzBaseJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/xulihuazj/pms/service/readis/RedisService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/xulihuazj/pms/service/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/xulihuazj/pms/boot/config/AsyncConfig.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -75,11 +55,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IPWhiteInterceptor.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IPWhiteInterceptor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/src/main/java/com/xulihuazj/pms/boot/authority/IPWhiteInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+            <state relative-caret-position="322">
+              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,8 +70,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="126" column="31" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="31" />
+            <state relative-caret-position="101">
+              <caret line="124" selection-start-line="124" selection-end-line="124" />
             </state>
           </provider>
         </entry>
@@ -127,17 +110,17 @@
       <file leaf-file-name="AppBeanConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/src/main/java/com/xulihuazj/pms/boot/config/AppBeanConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
+            <state relative-caret-position="442">
               <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServletInitializer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/com/xulihuazj/pms/api/init/ServletInitializer.java">
+      <file leaf-file-name="AsyncConfig.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/com/xulihuazj/pms/boot/config/AsyncConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="529">
+              <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="36" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -180,6 +163,7 @@
         <option value="$PROJECT_DIR$/api/src/main/java/com/xulihuazj/pms/boot/authority/AuthorityInterceptor.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/com/xulihuazj/pms/service/ip/IpWhiteService.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/com/xulihuazj/pms/boot/authority/IPWhiteInterceptor.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/xulihuazj/pms/boot/config/AsyncConfig.java" />
       </list>
     </option>
   </component>
@@ -260,17 +244,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pms" type="462c0819:PsiDirectoryNode" />
               <item name="boot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pms" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pms" type="462c0819:PsiDirectoryNode" />
-              <item name="boot" type="462c0819:PsiDirectoryNode" />
-              <item name="authority" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pms" type="b2602c69:ProjectViewProjectNode" />
@@ -379,8 +352,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.xulihuazj.pms.boot.authority" />
       <recent name="com.xulihuazj.pms.boot.config" />
+      <recent name="com.xulihuazj.pms.boot.authority" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\pms-v2-wrokspace\pms\data" />
@@ -556,12 +529,12 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3292683" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5085995" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.61916465" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35017422" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35017422" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Learn" order="2" />
@@ -686,13 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/xulihuazj/pms/boot/config/AppBeanConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/com/xulihuazj/pms/api/init/ServletInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -748,15 +714,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="126" column="31" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="31" />
+        <state relative-caret-position="101">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/com/xulihuazj/pms/boot/authority/IPWhiteInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        <state relative-caret-position="322">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/xulihuazj/pms/boot/config/AppBeanConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/xulihuazj/pms/boot/config/AsyncConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="36" selection-end-column="13" />
         </state>
       </provider>
     </entry>
