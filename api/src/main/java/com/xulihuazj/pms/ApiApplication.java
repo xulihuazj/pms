@@ -1,4 +1,4 @@
-package com.xulihuazj.pms.api;
+package com.xulihuazj.pms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
