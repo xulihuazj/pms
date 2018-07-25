@@ -98,11 +98,11 @@
             </dependency>
 
             <!--  MongoDB  -->
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-data-mongodb</artifactId>
-                <version>${mogondb.version}</version>
-            </dependency>
+            <!--<dependency>-->
+                <!--<groupId>org.springframework.boot</groupId>-->
+                <!--<artifactId>spring-boot-starter-data-mongodb</artifactId>-->
+                <!--<version>${mogondb.version}</version>-->
+            <!--</dependency>-->
 
             <!--  quartz定时任务 -->
             <dependency>

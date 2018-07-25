@@ -5,7 +5,7 @@ import com.xulihuazj.pms.object.pmsdb.ip.IpWhiteListDO;
 
 import java.util.List;
 
-@PMSDB
+//@PMSDB
 public interface IpWhiteListDOMapper {
 
     int deleteByPrimaryKey(Long ipLocationId);

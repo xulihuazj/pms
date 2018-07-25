@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xulihuazj.pms.mapper.pmsdb.sms.SmsLogDOMapper">
+    <resultMap id="BaseResultMap" type="com.xulihuazj.pms.object.pmsdb.sms.SmsLogDO">
+        <id column="sms_id" jdbcType="BIGINT" property="smsId"/>
+        <result column="mobile" jdbcType="BIGINT" property="mobile"/>
+        <result column="content" jdbcType="VARCHAR" property="content"/>
+        <result column="service_type" jdbcType="INTEGER" property="serviceType"/>
+        <result column="service_conditions" jdbcType="VARCHAR" property="serviceConditions"/>
+        <result column="send_status" jdbcType="VARCHAR" property="sendStatus"/>
+        <result column="failure_count" jdbcType="INTEGER" property="failureCount"/>
+        <result column="send_people" jdbcType="VARCHAR" property="sendPeople"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="last_modify_time" jdbcType="TIMESTAMP" property="lastModifyTime"/>
+        <result column="validation_status" jdbcType="VARCHAR" property="validationStatus"/>
+        <result column="ext_info" jdbcType="VARCHAR" property="extInfo"/>
+        <result column="user_agent" jdbcType="VARCHAR" property="userAgent"/>
+        <result column="environment" property="environment" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+    sms_id, mobile, content, service_type, service_conditions, send_status, failure_count, 
+    send_people, create_time, last_modify_time, validation_status, ext_info, user_agent, environment
+  </sql>
+
+    <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from sms_log
+        where sms_id = #{smsId,jdbcType=BIGINT}
+    </select>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from sms_log
+    where sms_id = #{smsId,jdbcType=BIGINT}
+  </delete>
+
+    <insert id="insertSelective" parameterType="com.cf.pms.dataobject.pmsdb.sms.SmsLogDO">
+        insert into sms_log
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="smsId != null">
+                sms_id,
+            </if>
+            <if test="mobile != null">
+                mobile,
+            </if>
+            <if test="content != null">
+                content,
+            </if>
+            <if test="serviceType != null">
+                service_type,
+            </if>
+            <if test="serviceConditions != null">
+                service_conditions,
+            </if>
+            <if test="sendStatus != null">
+                send_status,
+            </if>
+            <if test="failureCount != null">
+                failure_count,
+            </if>
+            <if test="sendPeople != null">
+                send_people,
+            </if>
+            <if test="validationStatus != null">
+                validation_status,
+            </if>
+            <if test="extInfo != null">
+                ext_info,
+            </if>
+            <if test="userAgent != null">
+                user_agent,
+            </if>
+            <if test="environment != null">
+                environment,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="smsId != null">
+                #{smsId,jdbcType=BIGINT},
+            </if>
+            <if test="mobile != null">
+                #{mobile,jdbcType=BIGINT},
+            </if>
+            <if test="content != null">
+                #{content,jdbcType=VARCHAR},
+            </if>
+            <if test="serviceType != null">
+                #{serviceType,jdbcType=INTEGER},
+            </if>
+            <if test="serviceConditions != null">
+                #{serviceConditions,jdbcType=VARCHAR},
+            </if>
+            <if test="sendStatus != null">
+                #{sendStatus,jdbcType=VARCHAR},
+            </if>
+            <if test="failureCount != null">
+                #{failureCount,jdbcType=INTEGER},
+            </if>
+            <if test="sendPeople != null">
+                #{sendPeople,jdbcType=VARCHAR},
+            </if>
+            <if test="validationStatus != null">
+                #{validationStatus,jdbcType=VARCHAR},
+            </if>
+            <if test="extInfo != null">
+                #{extInfo,jdbcType=VARCHAR},
+            </if>
+            <if test="userAgent != null">
+                #{userAgent,jdbcType=VARCHAR},
+            </if>
+            <if test="environment != null">
+                #{environment,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+
+    <update id="updateByPrimaryKeySelective" parameterType="com.cf.pms.dataobject.pmsdb.sms.SmsLogDO">
+        update sms_log
+        <set>
+            <if test="mobile != null">
+                mobile = #{mobile,jdbcType=BIGINT},
+            </if>
+            <if test="content != null">
+                content = #{content,jdbcType=VARCHAR},
+            </if>
+            <if test="serviceType != null">
+                service_type = #{serviceType,jdbcType=INTEGER},
+            </if>
+            <if test="serviceConditions != null">
+                service_conditions = #{serviceConditions,jdbcType=VARCHAR},
+            </if>
+            <if test="sendStatus != null">
+                send_status = #{sendStatus,jdbcType=VARCHAR},
+            </if>
+            <if test="failureCount != null">
+                failure_count = #{failureCount,jdbcType=INTEGER},
+            </if>
+            <if test="sendPeople != null">
+                send_people = #{sendPeople,jdbcType=VARCHAR},
+            </if>
+            <if test="validationStatus != null">
+                validation_status = #{validationStatus,jdbcType=VARCHAR},
+            </if>
+            <if test="extInfo != null">
+                ext_info = #{extInfo,jdbcType=VARCHAR},
+            </if>
+            <if test="userAgent != null">
+                user_agent = #{userAgent,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where sms_id = #{smsId,jdbcType=BIGINT}
+    </update>
+
+    <select id="sendCount" resultType="java.lang.Integer">
+	select 
+	count(1) 
+	from 
+	sms_log t 
+	where 
+	t.create_time >= DATE_ADD(now(),INTERVAL "-1" MINUTE ) 
+	and t.service_type = #{serviceType}
+	and t.mobile = #{mobile}
+  </select>
+
+    <select id="selectSmsCode" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from sms_log t
+        where
+        t.create_time >= DATE_ADD(now(),INTERVAL "-5" MINUTE )
+        and
+        t.service_conditions = #{smsCode} and t.validation_status = 'EFFECTIVE'
+        and
+        t.service_type = #{serviceType}
+        and t.mobile = #{mobile}
+    </select>
+
+    <select id="selectByMobileAndType" resultType="java.lang.Integer">
+  	select 
+    count(1)
+    from sms_log
+    where
+    	mobile = #{mobile,jdbcType=BIGINT}
+    and
+    	service_type = #{serviceType,jdbcType=INTEGER}
+    and
+    	service_conditions = #{serviceConditions,jdbcType=VARCHAR}
+    and 
+    	send_status = 'SUCCESS'
+   	<![CDATA[ and date_format(create_time,'%Y-%m-%d') = date_format(#{createTime},'%Y-%m-%d')
+        ]]>
+    </select>
+
+    <select id="selectSentFrequency" resultType="java.lang.Integer">
+  	select 
+    count(1)
+    from sms_log
+    where
+    	service_type = #{serviceType,jdbcType=INTEGER}
+    and
+    	service_conditions = #{serviceConditions,jdbcType=VARCHAR}
+    and 
+    	send_status = 'SUCCESS'
+   	<![CDATA[ 
+   		and date_format(create_time,'%Y-%m-%d') >= date_format(#{start},'%Y-%m-%d') 
+   		and date_format(create_time,'%Y-%m-%d') <= date_format(#{end},'%Y-%m-%d') 
+   	]]>
+   	and mobile = #{mobile,jdbcType=BIGINT}
+  </select>
+
+    <select id="sendCountOfRoom" resultType="java.lang.Integer">
+  	select 
+	count(1) 
+	from 
+	sms_log t 
+	where 
+	t.create_time >= DATE_ADD(now(),INTERVAL "-1" MINUTE ) 
+	and t.service_type = #{serviceType}
+	and t.mobile = #{mobile}
+	and t.service_conditions = #{serviceConditions}
+  </select>
+
+</mapper>
