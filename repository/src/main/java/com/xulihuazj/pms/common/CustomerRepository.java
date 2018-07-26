@@ -1,6 +1,6 @@
-package com.xulihuazj.pms.mongdb;
+package com.xulihuazj.pms.common;
 
-import org.springframework.data.mongodb.repository.MongoRepository;
+//import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;
 
