@@ -185,5 +185,11 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
+        <!-- ureport 报表 -->
+        <dependency>
+            <groupId>com.bstek.ureport</groupId>
+            <artifactId>ureport2-console</artifactId>
+        </dependency>
+
     </dependencies>
 </project>

@@ -19,7 +19,7 @@ public class ApiApplication {
 
     @GetMapping(value = "/")
     public String index() {
-        return "Hello,pms api!";
+        return "Hello,欢迎使用PMS-API!";
     }
 
     public static void main(String[] args) {
