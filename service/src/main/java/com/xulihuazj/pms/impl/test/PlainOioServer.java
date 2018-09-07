@@ -1,4 +1,4 @@
-package com.xulihuazj.pms.impl;
+package com.xulihuazj.pms.impl.test;
 
 import java.io.IOException;
 import java.io.OutputStream;

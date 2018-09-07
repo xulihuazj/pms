@@ -13,7 +13,7 @@ public class MQSendRepositoryImpl implements MQSendRepository {
 
     @Override
     public MQSendResult sendMessage(MQMessage message) {
-        Message message = new Message();
+//        Message message = new Message();
 
         return null;
     }
