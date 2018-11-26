@@ -6,6 +6,7 @@
 *.ear
 .idea/*
 *.iml
+*/*.iml
 *.prefs
 *.project
 */target/*
@@ -22,3 +23,5 @@ api/*.gitignore
 pms-api-solution.iml
 */*.iml
 */rebel.xml
+.gitattributes
+
