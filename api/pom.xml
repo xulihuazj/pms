@@ -27,10 +27,6 @@
             <groupId>com.xulihuazj.pms</groupId>
             <artifactId>service</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.xulihuazj.pms</groupId>
-            <artifactId>utils</artifactId>
-        </dependency>
 
         <!-- AOP spring aop切面 -->
         <dependency>
@@ -110,6 +106,10 @@
             <version>2.0.0.RELEASE</version>
             <optional>true</optional>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
 
         <!-- 引入Quartz定时任务 -->
         <dependency>
@@ -128,17 +128,21 @@
             <artifactId>commons-lang3</artifactId>
         </dependency>
 
+        <!--<dependency>-->
+            <!--<groupId>me.chyxion</groupId>-->
+            <!--<artifactId>table-to-xls</artifactId>-->
+        <!--</dependency>-->
         <!-- ureport 报表 -->
-        <dependency>
-            <groupId>com.bstek.ureport</groupId>
-            <artifactId>ureport2-console</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.bstek.ureport</groupId>-->
+            <!--<artifactId>ureport2-console</artifactId>-->
+        <!--</dependency>-->
 
     </dependencies>
 
     <!-- Spring Boot 的编译插件 -->
     <build>
-        <finalName>api</finalName>
+        <finalName>openapi</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

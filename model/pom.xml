@@ -12,10 +12,10 @@
     <artifactId>model</artifactId>
 
     <dependencies>
-        <dependency>
-            <groupId>com.xulihuazj.pms</groupId>
-            <artifactId>utils</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.xulihuazj.pms</groupId>-->
+            <!--<artifactId>utils</artifactId>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>com.xulihuazj.pms</groupId>

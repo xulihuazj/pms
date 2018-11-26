@@ -24,10 +24,10 @@
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-web</artifactId>-->
+        <!--</dependency>-->
 
         <!--- druid- 数据库连接池 -->
         <dependency>
@@ -154,11 +154,11 @@
         </dependency>
 
         <!-- freemarker -->
-        <dependency>
+ <!--       <dependency>
             <groupId>org.freemarker</groupId>
             <artifactId>freemarker</artifactId>
-            <version>2.3.23</version>
-        </dependency>
+            <version>2.3.28</version>
+        </dependency>-->
 
         <!-- request校验 -->
         <dependency>
@@ -186,10 +186,10 @@
         </dependency>
 
         <!-- ureport 报表 -->
-        <dependency>
-            <groupId>com.bstek.ureport</groupId>
-            <artifactId>ureport2-console</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.bstek.ureport</groupId>-->
+            <!--<artifactId>ureport2-console</artifactId>-->
+        <!--</dependency>-->
 
     </dependencies>
 </project>

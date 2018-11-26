@@ -9,12 +9,12 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * statusMachine.java 1.0.0 2018/09/04  09:39
+ * StatusMachine.java 1.0.0 2018/09/04  09:39
  * Copyright © 2014-2017,52mamahome.com.All rights reserved
  * history :
  * 1. 2018/09/04  09:39 created by xulihua
  */
-public class statusMachine {
+public class StatusMachine {
 
     private final static Map<Set<Integer>, String> statusControl = new HashMap<>();
 
@@ -66,15 +66,15 @@ public class statusMachine {
         set.add(1);
         set.add(2);
         set.add(3);
-        System.out.println(statusMachine.changeStatus(set));
+        System.out.println(StatusMachine.changeStatus(set));
 
         Set<Integer> set2 = new HashSet<>();
         set2.add(4);
-        System.out.println(statusMachine.changeStatus(set2));
+        System.out.println(StatusMachine.changeStatus(set2));
 
         Set<Integer> set3 = new HashSet<>();
 //        set3.add(4);
         set3.add(5);
-        System.out.println(statusMachine.changeStatus(set3));
+        System.out.println(StatusMachine.changeStatus(set3));
     }
 }
