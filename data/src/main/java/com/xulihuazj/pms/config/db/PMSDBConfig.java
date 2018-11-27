@@ -60,9 +60,10 @@ public class PMSDBConfig {
         return new TransactionTemplate(masterTransactionManager());
     }
 
-    public SqlSessionFactory pmsdbSqlSeesionFactory(
-            @Qualifier("pmsdbDataSource") DataSource dataSource
-    ) throws Exception {
+    @Bean(name = "pmsdbSqlSessionFactory")
+    @Primary
+    @Qualifier("pmsdbDataSource")
+    public SqlSessionFactory pmsdbSqlSeesionFactory( DataSource dataSource) throws Exception {
         //  Session 工厂
         final SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
         sessionFactory.setDataSource(dataSource);

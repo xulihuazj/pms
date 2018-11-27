@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Param;
 
 import java.util.Date;
 
-//@PMSDB
+@PMSDB
 public interface SmsLogDOMapper {
 
     int deleteByPrimaryKey(Long smsId);
